@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { QContainer } from './Container';
+import { QContainer } from './Pages/Container';
 import { Header } from './Header';
 import { SRouter } from './router/Router';
 import TwitterIcon from '@mui/icons-material/Twitter';

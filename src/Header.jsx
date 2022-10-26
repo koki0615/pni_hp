@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Icon from '/root/PNI/hp/src/images/Icon.jpg';
+import Icon from '/root/PNI/hp/src/images/PNIlogo.png';
 import { Link } from "react-router-dom";
 
 //ヘッダーの作成
@@ -9,16 +9,16 @@ export const Header = () => {
         <div>
             <SHeader>
                 <SDiv>
-                    <SImg src={Icon} />
+                    <SImg src={Icon} style={{height:"80px",width:"80px"}} />
                     <STitle>
                       <Link to="/" style={{textDecoration: "none", color: "black"}}>Plus newit</Link>
                     </STitle>
                 </SDiv>
                 <SLink>
                     <SUl>
-                      <Li><Link to="/page1" style={{textDecoration: "none", color: "black"}}>会社概要</Link></Li>
-                      <Li><Link to="/page2" style={{textDecoration: "none", color: "black"}}>事業内容</Link></Li>
-                      <Li><Link to="/page3" style={{textDecoration: "none", color: "black"}}>新着情報</Link></Li>
+                      <Li><Link to="/companyprofile" style={{textDecoration: "none", color: "black"}}>会社概要</Link></Li>
+                      <Li><Link to="/business" style={{textDecoration: "none", color: "black"}}>事業内容</Link></Li>
+                      <Li><Link to="/new" style={{textDecoration: "none", color: "black"}}>新着情報</Link></Li>
                     </SUl>  
                 </SLink>    
             </SHeader>
@@ -37,6 +37,12 @@ const SHeader = styled.div`
     background-color: #f0f8ff;
     display: flex;
     vertical-align: middle;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
     
 `
 
@@ -74,7 +80,7 @@ const SUl = styled.ul`
 `
 
 const Li = styled.li`
-    padding-right: 20px;
+    margin-right: 20px;
     font-size: 20px;
     font-family: Verdana;
     color: black;
