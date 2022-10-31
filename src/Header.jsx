@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Icon from '/root/PNI/hp/src/images/PNIlogo.png';
+import Icon from './images/PNIlogo.png';
 import { Link } from "react-router-dom";
 
 //ヘッダーの作成
@@ -16,7 +16,7 @@ export const Header = () => {
                 </SDiv>
                 <SLink>
                     <SUl>
-                      <Li><Link to="/companyprofile" style={{textDecoration: "none", color: "black"}}>会社概要</Link></Li>
+                      <Li><Link to="/profile" style={{textDecoration: "none", color: "black"}}>社員紹介</Link></Li>
                       <Li><Link to="/business" style={{textDecoration: "none", color: "black"}}>事業内容</Link></Li>
                       <Li><Link to="/new" style={{textDecoration: "none", color: "black"}}>新着情報</Link></Li>
                     </SUl>  
@@ -34,7 +34,7 @@ export const Header = () => {
 const SHeader = styled.div`
     width: 100%;
     height: 100px;
-    background-color: #f0f8ff;
+    background-color: #e0e0e0;
     display: flex;
     vertical-align: middle;
     position: fixed;
@@ -64,7 +64,6 @@ const STitle = styled.p`
 `
 
 const SLink = styled.div`
-    background-color: #f0f8ff;
     list-style: none;
     display:flex;
     align-items: center;

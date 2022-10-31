@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import Image from '../images/PNIlogo.png';
 
 
 export const Page1 = () => {
     return (
-        <div style={{marginTop: "150px"}}>
-            <div>
+      <div style={{marginTop: "150px"}}>
+        <SDiv>
+            <div style={{marginLeft:"70px"}}>
               <h4 style={{marginBottom: "0px"}}>COMPANY PROFILE</h4>
               <h1 style={{marginTop: "0px",fontSize: "60px"}}>会社概要</h1>
             </div>
@@ -49,10 +51,22 @@ export const Page1 = () => {
                 </STr>
               </STable>
             </div>
-        </div>
-        
+        </SDiv>
+       </div> 
     );
 };
+
+const SDiv = styled.div `
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(${Image});
+  background-size: contain;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  background-position: center;
+  margin: 0 auto;
+`
 
 const STable = styled.table`
   width: 80%;
